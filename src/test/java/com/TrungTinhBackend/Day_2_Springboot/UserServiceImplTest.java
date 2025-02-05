@@ -10,7 +10,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -51,7 +50,7 @@ public class UserServiceImplTest {
         assertNotNull(response.getData());
     }
 
-    // 🟢 Test đăng nhập thành công
+
     @Test
     void testLogin_Success() {
         UserDTO userDTO = new UserDTO();
